@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-
 export const validateEnv = () => {
 
     if (!process.env.NODE_ENV) {
@@ -31,6 +30,6 @@ export const validateEnv = () => {
 
         process.exit(1);
     };
-    
+
     console.log("[OK] All required environment variables are present");
 };
